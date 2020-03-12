@@ -1,0 +1,120 @@
+.container {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    .title-page {
+        color: green;
+        font-size: 16px;
+        font-family:  Verdana, sans-serif;
+    }
+    .input-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 20px;;
+        .input-title {
+            width:50%;
+            background: rgb(236, 231, 185);
+            border: 1px solid green;
+            padding: 12px;
+            border-radius: 5px;
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .input-content{
+            width: 50%;
+            border: 1px solid rgb(46, 114, 46);
+            background: rgb(236, 231, 185);
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 12px;
+            min-height: 200px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: gray;
+            outline: none;
+        }
+        .save-btn{
+            padding: 10px 40px;
+            border-radius: 6px;
+            background: rgb(28, 56, 28);
+            border: 2px solid green;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            outline: none;
+            &:hover {
+                background:rgb(216, 186, 105);
+                cursor: pointer;
+            }
+            &.cancel {
+                border: rgb(180, 128, 32);
+                background: rgb(180, 128, 32);
+                color: white;
+                &:hover {
+                    background-color: salmon;
+                }
+            }
+        }
+        .action-wrapper{
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+        }
+    }
+    .card-content{
+        border: 2px soid rgba(0,0,0,0.1);
+        border-radius: 5px;
+        padding: 16px;
+        box-shadow: 4px 3px 9px rgba(0,0,0,0.1);
+        margin-bottom: 16px;
+        background: rgb(246, 224, 182);
+        transition: all ease 0.35s;
+        position: relative;
+        &:hover {
+            background: rgb(230, 230, 96);
+            cursor: pointer;
+        }
+        p {
+            margin: 0px;
+        }
+        .title {
+            font-size:24px;
+            font-weight: bold;
+            color: green;
+        }
+        .date {
+            font-size: 12px;
+            color: gray;
+        }
+        .content{
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgb(35, 46, 27)
+        }
+        .delete-btn{
+            width: 30px;
+            height: 30px;
+            background: red;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            &:hover {
+                cursor: pointer;
+
+            }
+        }
+    }
+}
